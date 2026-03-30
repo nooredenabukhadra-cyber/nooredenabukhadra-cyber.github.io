@@ -1,242 +1,79 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>فنّ الحائط | لوحات عصرية لمنزلك</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فن الحائط</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+direction:rtl;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#f5f5f5;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+.hero{
+height:60vh;
+background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:32px;
+}
+
+.container{
+padding:40px;
+text-align:center;
+}
+</style>
+
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">فنّ الحائط</a>
-      <button class="nav-toggle" id="navToggle" aria-label="القائمة">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">الرئيسية</a></li>
-        <li><a href="#products">المنتجات</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#contact">اتصل بنا</a></li>
-      </ul>
-      <a href="#cart" class="nav-cart" aria-label="السلة">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-        </svg>
-        <span class="cart-count">0</span>
-      </a>
-    </div>
-  </nav>
+<header>
+<h2>فن الحائط</h2>
+<nav>
+<ul>
+<li><a href="#">الرئيسية</a></li>
+<li><a href="#">المنتجات</a></li>
+<li><a href="#">من نحن</a></li>
+<li><a href="#">اتصل بنا</a></li>
+</ul>
+</nav>
+</header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=80" alt="لوحة فنية جميلة على الحائط" loading="eager">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content fade-in">
-      <h1 class="hero-title">حوّل جدرانك إلى فن</h1>
-      <p class="hero-subtitle">لوحات عصرية تضيف لمسة جمال إلى منزلك</p>
-      <a href="#products" class="btn btn-primary">تسوق الآن</a>
-    </div>
-  </section>
+<section class="hero">
+أفضل لوحات جدارية عصرية
+</section>
 
-  <!-- CINEMATIC PRODUCT 1 -->
-  <section class="cinematic-section cinematic-full" id="product-1">
-    <div class="cinematic-bg parallax-bg">
-      <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1920&q=80" alt="لوحة الطبيعة الهادئة" loading="lazy">
-    </div>
-    <div class="cinematic-overlay"></div>
-    <div class="cinematic-content fade-in">
-      <span class="cinematic-label">قطعة مميزة</span>
-      <h2 class="cinematic-title">لوحة الطبيعة الهادئة</h2>
-      <p class="cinematic-desc">تصميم مستوحى من الطبيعة</p>
-      <div class="cinematic-price">120 ₪</div>
-      <button class="btn btn-primary add-to-cart" data-name="لوحة الطبيعة الهادئة" data-price="120">أضف إلى السلة</button>
-    </div>
-  </section>
+<div class="container">
+<h2>مرحباً بكم</h2>
+<p>متجر متخصص في فن الحائط والديكور العصري</p>
+</div>
 
-  <!-- CINEMATIC PRODUCT 2 - SPLIT -->
-  <section class="cinematic-section cinematic-split">
-    <div class="split-image fade-in-left">
-      <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80" alt="لوحة الأسود والأبيض" loading="lazy">
-    </div>
-    <div class="split-content fade-in-right">
-      <span class="cinematic-label">تصنيف كلاسيكي</span>
-      <h2 class="cinematic-title">لوحة الأسود والأبيض</h2>
-      <p class="cinematic-desc">بساطة وأناقة عصرية تتناسب مع كل الديكورات وتعكس الذوق الرفيع</p>
-      <div class="cinematic-price">95 ₪</div>
-      <button class="btn btn-primary add-to-cart" data-name="لوحة الأسود والأبيض" data-price="95">أضف إلى السلة</button>
-    </div>
-  </section>
-
-  <!-- CINEMATIC PRODUCT 3 -->
-  <section class="cinematic-section cinematic-full" id="product-3">
-    <div class="cinematic-bg parallax-bg">
-      <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=1920&q=80" alt="لوحة هندسية عصرية" loading="lazy">
-    </div>
-    <div class="cinematic-overlay"></div>
-    <div class="cinematic-content fade-in">
-      <span class="cinematic-label">تصميم حصري</span>
-      <h2 class="cinematic-title">لوحة هندسية عصرية</h2>
-      <p class="cinematic-desc">أشكال هندسية تضفي عمقاً وحيوية على مساحتك</p>
-      <div class="cinematic-price">110 ₪</div>
-      <button class="btn btn-primary add-to-cart" data-name="لوحة هندسية عصرية" data-price="110">أضف إلى السلة</button>
-    </div>
-  </section>
-
-  <!-- GRID PRODUCTS -->
-  <section class="products-grid-section" id="products">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">مجموعتنا</span>
-        <h2 class="section-title">منتجات مختارة بعناية</h2>
-      </div>
-      <div class="products-grid">
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&q=80" alt="لوحة اقتباس ملهم" loading="lazy">
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">لوحة اقتباس ملهم</h3>
-            <div class="product-price">80 ₪</div>
-            <button class="btn btn-secondary add-to-cart" data-name="لوحة اقتباس ملهم" data-price="80">أضف إلى السلة</button>
-          </div>
-        </div>
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&q=80" alt="لوحة ألوان دافئة" loading="lazy">
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">لوحة ألوان دافئة</h3>
-            <div class="product-price">105 ₪</div>
-            <button class="btn btn-secondary add-to-cart" data-name="لوحة ألوان دافئة" data-price="105">أضف إلى السلة</button>
-          </div>
-        </div>
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=600&q=80" alt="لوحة فنية مجردة" loading="lazy">
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">لوحة فنية مجردة</h3>
-            <div class="product-price">130 ₪</div>
-            <button class="btn btn-secondary add-to-cart" data-name="لوحة فنية مجردة" data-price="130">أضف إلى السلة</button>
-          </div>
-        </div>
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80" alt="لوحة الطبيعة الجبلية" loading="lazy">
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">لوحة الطبيعة الجبلية</h3>
-            <div class="product-price">115 ₪</div>
-            <button class="btn btn-secondary add-to-cart" data-name="لوحة الطبيعة الجبلية" data-price="115">أضف إلى السلة</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES SECTION -->
-  <section class="features-section" id="about">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">لماذا نحن</span>
-        <h2 class="section-title">نتميز بالجودة والإبداع</h2>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card fade-in">
-          <div class="feature-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">جودة عالية</h3>
-          <p class="feature-desc">نستخدم أجود المواد في طباعة وتشكيل اللوحات لضمان مظهر أنيق يدوم لسنوات</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-              <line x1="9" y1="9" x2="9.01" y2="9"/>
-              <line x1="15" y1="9" x2="15.01" y2="9"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">تصاميم عصرية</h3>
-          <p class="feature-desc">فريق من المصممين المحترفين يبتكر تصاميم فريدة تواكب أحدث الاتجاهات العالمية</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="1" y="3" width="15" height="13"/>
-              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
-              <circle cx="5.5" cy="18.5" r="2.5"/>
-              <circle cx="18.5" cy="18.5" r="2.5"/>
-            </svg>
-          </div>
-          <h3 class="feature-title">توصيل سريع</h3>
-          <p class="feature-desc">نوفر خدمة توصيل سريعة وآمنة لجميع المحافظات مع تغليف فاخر يحافظ على اللوحات</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LIFESTYLE SECTION -->
-  <section class="lifestyle-section">
-    <div class="lifestyle-bg">
-      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&q=80" alt="جدار مزين باللوحات" loading="lazy">
-    </div>
-    <div class="lifestyle-overlay"></div>
-    <div class="lifestyle-content fade-in">
-      <h2 class="lifestyle-title">صمّم مساحتك بأسلوبك</h2>
-      <p class="lifestyle-desc">اختر من مجموعتنا الفريدة واجعل كل جدار في منزلك يروي قصة</p>
-    </div>
-  </section>
-
-  <!-- CALL TO ACTION -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content fade-in">
-        <h2 class="cta-title">ابدأ رحلتك الفنية الآن</h2>
-        <p class="cta-desc">اكتشف مجموعتنا الحصرية من اللوحات العصرية وأضف لمسة فنية إلى منزلك</p>
-        <a href="#products" class="btn btn-primary btn-large">تصفح المنتجات</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer" id="contact">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3 class="footer-logo">فنّ الحائط</h3>
-          <p class="footer-tagline">لوحات عصرية تُعيد تعريف جمال منزلك</p>
-        </div>
-        <div class="footer-links">
-          <a href="#hero">الرئيسية</a>
-          <a href="#products">المنتجات</a>
-          <a href="#about">من نحن</a>
-          <a href="#contact">اتصل بنا</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 جميع الحقوق محفوظة</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- CART NOTIFICATION -->
-  <div class="cart-notification" id="cartNotification">
-    <span>تمت الإضافة إلى السلة</span>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
